@@ -6,7 +6,11 @@
 body {
     width: 100%;
     background-color: #fff;
+     
+    
 }
+
+
 
 h1 {
     font-size: 76px;
@@ -25,7 +29,7 @@ h2 {
 }
 h3 {
     font-size: 25px;
-    color: #76FF03;
+    color: #303030;
 }
 h4{
     font-size: 35px;
@@ -35,30 +39,50 @@ h4{
 
 .zooALL {
     height: 3500px;
-    border: 10px solid rgba(239, 108, 0, 0.3);
+    border: 10px solid rgba(39, 39, 39, 0.73);
+    background: url(img/024.jpg) 0 0 ;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.zooALL:before{
+  content: '';
+  background: inherit;/*.bgImageで設定した背景画像を継承する*/
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;/*重なり順序を一番下にしておく*/
 }
 
 .zoomain {
     overflow: hidden;
-    width: 887px;
+    width: 862px;
     height: 1598px;
     border: dashed 1px #999;
     float: left;
     background-color: #fff;
-    border: thick solid #303030;
-    
+    border: thick solid #9E9E9E;
+    background-color: rgba(255, 255, 0, 0.56);
 }
 
 .zoo01 {
     background: #fff url(img/005.png) 0 0 no-repeat;
-    width: 100%;
+    width: 99.55%;
     height: 600px;
     background-size: cover;
     margin-bottom: 32px;
-    border-bottom: medium solid #000000;
-     position: relative;
-  z-index: 0;
-  overflow: hidden;
+    border: medium solid #000000;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
 }
 .zoo01:before{
   content: '';
@@ -103,12 +127,13 @@ h4{
 }
 
 #left {
-    background-color: rgba(46, 125, 50, 0.79);
+    background-color: rgba(255, 255, 0, 0.56);
     float: left;
     width: 198px;
     height: 498px;
     border: dashed 1px #999;
     margin: 10px 10px 10px 10px;
+    border: thick solid #9E9E9E;
 }
 #title01{
     text-align: center;
@@ -117,12 +142,13 @@ h4{
 }
 
 #right {
-    background-color: rgba(46, 125, 50, 0.79);
+    background-color: rgba(255, 255, 0, 0.56);
     float: left;
     width: 198px;
     height: 498px;
     border: dashed 1px #999;
     margin: 10px 0px 10px 10px;
+    border: thick solid #9E9E9E;
 }
 #title02{
     text-align: center;
