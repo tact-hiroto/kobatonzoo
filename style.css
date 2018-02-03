@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Yu Gothic";
 }
 
 body {
@@ -17,28 +18,33 @@ h1 {
     padding-left: 8px;
     padding-top: 150px;
     margin-bottom: 16px;
-    color: #303030;
+    color: rgba(255, 128, 0, 0.87);
     font-weight: 400;
     text-align: center;
+    font-family: "Rounded Mplus 1c";
 }
 
 h2 {
-    font-size: 56px;
+    font-size: 106px;
     color: #e63c35;
     text-align: center;
+    font-family: "Nico Moji";
 }
 h3 {
     font-size: 25px;
     color: #303030;
+    font-family: "Rounded Mplus 1c";
 }
 h4{
     font-size: 35px;
     color: #000;
-    text-align: center;
+    
+    font-family: "Rounded Mplus 1c";
+    margin-bottom: 35px;
 }
 
 .zooALL {
-    height: 3500px;
+    height: 5500px;
     border: 10px solid rgba(39, 39, 39, 0.73);
     background: url(img/024.jpg) 0 0 ;
     position: relative;
@@ -65,7 +71,7 @@ h4{
 .zoomain {
     overflow: hidden;
     width: 862px;
-    height: 1598px;
+    height: 3598px;
     border: dashed 1px #999;
     float: left;
     background-color: #fff;
@@ -108,11 +114,93 @@ h4{
 
 .zoo02 {}
 
+
+
 .zoo03 {
-    margin-top: 20px;
+  margin-top: 30px;
+  position: relative;
 }
-
-
+.zoo03::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.zoo03:hover::before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+.zoo04{
+    margin-top: 50px;
+   margin-bottom: 40px;
+}
+.zoo05{
+    width: 800px;
+    height: 500px;
+    background: #fff url(img/020.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.zoo06{
+    width: 800px;
+    height: 500px;
+    background: #fff url(img/021.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.zoo07{
+    width: 800px;
+    height: 500px;
+    background: #fff url(img/022.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.zoo08{
+    width: 800px;
+    height: 500px;
+    background: #fff url(img/019.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.zoo09{
+    width: 198px;
+    height: 200px;
+    background: #fff url(img/014.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.zoo10{
+    width: 198px;
+    height: 200px;
+    background: #fff url(img/013.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.zoo11{
+    width: 198px;
+    height: 200px;
+    background: #fff url(img/023.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.zoo12{
+    float: left;
+    width: 250px;
+    height: 310px;
+    background: #fff url(img/TOP.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
 /* Reset jquery.bxslider.css */
 
 .bx-viewport {
@@ -122,7 +210,7 @@ h4{
 }
 
 #slider li {
-    height: 50vh;
+    height: 80vh;
     background: center / cover no-repeat;
 }
 
@@ -130,7 +218,7 @@ h4{
     background-color: rgba(255, 255, 0, 0.56);
     float: left;
     width: 198px;
-    height: 498px;
+    height: 1588px;
     border: dashed 1px #999;
     margin: 10px 10px 10px 10px;
     border: thick solid #9E9E9E;
@@ -145,7 +233,7 @@ h4{
     background-color: rgba(255, 255, 0, 0.56);
     float: left;
     width: 198px;
-    height: 498px;
+    height: 1588px;
     border: dashed 1px #999;
     margin: 10px 0px 10px 10px;
     border: thick solid #9E9E9E;
