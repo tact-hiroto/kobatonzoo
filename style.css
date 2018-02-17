@@ -7,11 +7,7 @@
 body {
     width: 100%;
     background-color: #fff;
-     
-    
 }
-
-
 
 h1 {
     font-size: 76px;
@@ -30,53 +26,58 @@ h2 {
     text-align: center;
     font-family: "Nico Moji";
 }
+
 h3 {
     font-size: 25px;
     color: #303030;
     font-family: "Rounded Mplus 1c";
 }
-h4{
+
+h4 {
     font-size: 35px;
     color: #000;
-    
+
     font-family: "Rounded Mplus 1c";
     margin-bottom: 35px;
 }
 
 .zooALL {
-    height: 5500px;
+    
     border: 10px solid rgba(39, 39, 39, 0.73);
-    background: url(img/024.jpg) 0 0 ;
+    background: url(img/024.jpg) 0 0;
     position: relative;
     z-index: 0;
     overflow: hidden;
 }
-.zooALL:before{
-  content: '';
-  background: inherit;/*.bgImageで設定した背景画像を継承する*/
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  position: absolute;
-  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;/*重なり順序を一番下にしておく*/
+
+.zooALL:before {
+    content: '';
+    background: inherit;
+    /*.bgImageで設定した背景画像を継承する*/
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    /*重なり順序を一番下にしておく*/
 }
 
 .zoomain {
     overflow: hidden;
     width: 862px;
-    height: 3598px;
+    
     border: dashed 1px #999;
     float: left;
     background-color: #fff;
     border: thick solid #9E9E9E;
-    background-color: rgba(255, 255, 0, 0.56);
+    background-color: rgba(255, 186, 0, 0.21);
 }
 
 .zoo01 {
@@ -90,21 +91,24 @@ h4{
     z-index: 0;
     overflow: hidden;
 }
-.zoo01:before{
-  content: '';
-  background: inherit;/*.bgImageで設定した背景画像を継承する*/
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  position: absolute;
-  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;/*重なり順序を一番下にしておく*/
+
+.zoo01:before {
+    content: '';
+    background: inherit;
+    /*.bgImageで設定した背景画像を継承する*/
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    /*重なり順序を一番下にしておく*/
 }
 
 
@@ -117,42 +121,48 @@ h4{
 
 
 .zoo03 {
-  margin-top: 30px;
-  position: relative;
+    margin-top: 30px;
+    position: relative;
 }
+
 .zoo03::before {
-  position: absolute;
-  top: 0;
-  left: -75%;
-  z-index: 2;
-  display: block;
-  content: '';
-  width: 50%;
-  height: 100%;
-  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-  -webkit-transform: skewX(-25deg);
-  transform: skewX(-25deg);
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(206, 0, 255, 0.26) 0%, rgba(255, 255, 255, .3) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
 }
+
 .zoo03:hover::before {
-  -webkit-animation: shine .75s;
-  animation: shine .75s;
+    -webkit-animation: shine .75s;
+    animation: shine .75s;
 }
+
 @-webkit-keyframes shine {
-  100% {
-    left: 125%;
-  }
+    100% {
+        left: 125%;
+    }
 }
+
 @keyframes shine {
-  100% {
-    left: 125%;
-  }
+    100% {
+        left: 125%;
+    }
 }
-.zoo04{
+
+.zoo04 {
     margin-top: 50px;
-   margin-bottom: 40px;
+    margin-bottom: 40px;
 }
-.zoo05{
+
+/*.zoo05{
     width: 800px;
     height: 500px;
     background: #fff url(img/020.jpg) 0 0 no-repeat;
@@ -175,32 +185,101 @@ h4{
     height: 500px;
     background: #fff url(img/019.jpg) 0 0 no-repeat;
     background-size: cover;
-}
-.zoo09{
+*/
+
+.zoo09 {
     width: 198px;
     height: 200px;
     background: #fff url(img/014.jpg) 0 0 no-repeat;
     background-size: cover;
 }
-.zoo10{
+
+.zoo10 {
     width: 198px;
     height: 200px;
     background: #fff url(img/013.jpg) 0 0 no-repeat;
     background-size: cover;
 }
-.zoo11{
+
+.zoo11 {
     width: 198px;
     height: 200px;
     background: #fff url(img/023.jpg) 0 0 no-repeat;
     background-size: cover;
 }
-.zoo12{
+
+.zoo12 {
     float: left;
     width: 250px;
     height: 310px;
     background: #fff url(img/TOP.jpg) 0 0 no-repeat;
     background-size: cover;
 }
+
+.container {
+    width: 560px;
+    margin: 0 auto;
+    display: grid;
+    position: relative;
+    grid-template-columns: 180px 180px 180px;
+    grid-gap: 10px;
+}
+
+.item {
+    color: white;
+    padding: 70px 30px;
+}
+
+.a {
+    background: #fff url(img/020.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.b {
+    background: #fff url(img/021.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.c {
+    background: #fff url(img/022.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.d {
+    background: #fff url(img/019.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.e {
+    background: #fff url(img/007.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.f {
+    background: #fff url(img/100.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.g {
+    background: #fff url(img/101.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.h {
+    background: #fff url(img/104.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+.i {
+    background: #fff url(img/103.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+
+.a {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 /* Reset jquery.bxslider.css */
 
 .bx-viewport {
@@ -215,7 +294,7 @@ h4{
 }
 
 #left {
-    background-color: rgba(255, 255, 0, 0.56);
+    background-color: rgba(255, 78, 0, 0.33);
     float: left;
     width: 198px;
     height: 1588px;
@@ -223,14 +302,15 @@ h4{
     margin: 10px 10px 10px 10px;
     border: thick solid #9E9E9E;
 }
-#title01{
+
+#title01 {
     text-align: center;
     width: 198px;
     height: 35px;
 }
 
 #right {
-    background-color: rgba(255, 255, 0, 0.56);
+    background-color: rgba(255, 78, 0, 0.33);
     float: left;
     width: 198px;
     height: 1588px;
@@ -238,7 +318,8 @@ h4{
     margin: 10px 0px 10px 10px;
     border: thick solid #9E9E9E;
 }
-#title02{
+
+#title02 {
     text-align: center;
     width: 198px;
     height: 35px;
