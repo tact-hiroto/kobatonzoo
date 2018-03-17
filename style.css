@@ -36,9 +36,9 @@ h3 {
 h4 {
     font-size: 35px;
     color: #000;
-
     font-family: "Rounded Mplus 1c";
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+    margin-top: 15px;
 }
 
 .zooALL {
@@ -162,34 +162,12 @@ h4 {
     margin-bottom: 40px;
 }
 
-/*.zoo05{
-    width: 800px;
-    height: 500px;
-    background: #fff url(img/020.jpg) 0 0 no-repeat;
-    background-size: cover;
-}
-.zoo06{
-    width: 800px;
-    height: 500px;
-    background: #fff url(img/021.jpg) 0 0 no-repeat;
-    background-size: cover;
-}
-.zoo07{
-    width: 800px;
-    height: 500px;
-    background: #fff url(img/022.jpg) 0 0 no-repeat;
-    background-size: cover;
-}
-.zoo08{
-    width: 800px;
-    height: 500px;
-    background: #fff url(img/019.jpg) 0 0 no-repeat;
-    background-size: cover;
-*/
+
 
 .zoo09 {
     width: 198px;
     height: 200px;
+    margin-bottom: 7px;
     background: #fff url(img/014.jpg) 0 0 no-repeat;
     background-size: cover;
 }
@@ -197,13 +175,16 @@ h4 {
 .zoo10 {
     width: 198px;
     height: 200px;
+    margin-bottom: 7px;
     background: #fff url(img/013.jpg) 0 0 no-repeat;
     background-size: cover;
 }
 
 .zoo11 {
     width: 198px;
-    height: 200px;
+    height: 200px;]
+    margin-top: 10px;
+    margin-bottom: 7px;
     background: #fff url(img/023.jpg) 0 0 no-repeat;
     background-size: cover;
 }
@@ -286,11 +267,17 @@ h4 {
     left: 0;
     box-shadow: none;
     border: none;
+        -moz-box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    -o-box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
+    -ms-box-shadow: 10px 10px 10px rgba(0,0,0,0.4);
 }
 
 #slider li {
-    height: 80vh;
+
+    height: 550px;
     background: center / cover no-repeat;
+    
 }
 
 #left {
@@ -323,4 +310,121 @@ h4 {
     text-align: center;
     width: 198px;
     height: 35px;
+}
+.grad-btn {
+  /*.grad-btnのCSSは表示/非表示の動作には関係ないので、ご自由にどうぞ。*/
+}
+.grad-btn::before {
+  content: "続きを読む";
+      text-align: center;
+}
+.grad-item {
+  position: relative;
+  overflow: hidden;
+  height: 80px; /*隠した状態の高さ*/
+}
+.grad-item::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; /*グラデーションで隠す高さ*/
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+  content: "";
+}
+.grad-trigger {
+  display: none; /*チェックボックスは常に非表示*/
+}
+.grad-trigger:checked ~ .grad-btn::before {
+  content: "閉じる" /*チェックされていたら、文言を変更する*/
+}
+.grad-trigger:checked ~ .grad-item {
+  height: auto; /*チェックされていたら、高さを戻す*/
+}
+.grad-trigger:checked ~ .grad-item::before {
+  display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+.hover06 figure img {
+	-webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.4);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover06 figure:hover img {
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
 }
